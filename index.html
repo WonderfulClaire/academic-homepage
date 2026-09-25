@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Claire — MSc student at Tsinghua University, working on wearable audio, LLM evaluation, and AI systems.">
+    <meta name="description" content="Claire — MSc student at Tsinghua University. LLM post-training, reinforcement learning, agents, and multimodal learning.">
     <meta property="og:title" content="Claire · Academic Homepage">
-    <meta property="og:description" content="MSc Student @ Tsinghua · Wearable Audio × LLM Evaluation × AI Systems">
+    <meta property="og:description" content="MSc Student @ Tsinghua · LLM Post-training · Reinforcement Learning · Agents">
     <title>Claire · Academic Homepage</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#top">Skip to content</a>
     <header class="nav">
         <a class="nav__brand" href="#top">Claire<span>.dev</span></a>
         <nav class="nav__links">
             <a href="#about">About</a>
             <a href="#research">Research</a>
             <a href="#projects">Projects</a>
-            <a href="#publications">Publications</a>
+            <a href="#reports">Reports</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -27,15 +28,10 @@
             <div class="hero__inner">
                 <p class="hero__eyebrow">MSc Student @ Tsinghua · GitHub @WonderfulClaire</p>
                 <h1 class="hero__title">Claire</h1>
-                <p class="hero__tagline">
-                    Building practical AI systems at the intersection of
-                    <strong>signal processing</strong>, <strong>LLM evaluation</strong>,
-                    and <strong>human-centered applications</strong>.
-                </p>
-                <p class="hero__sub">
-                    MSc student at Tsinghua University, working on wearable audio,
-                    multi-channel speech enhancement, LLM evaluation, and AI systems.
-                </p>
+                <p class="hero__tagline">Studying how models learn from feedback and use tools:<br>
+                    <strong>LLM post-training</strong>, <strong>reinforcement learning</strong>, and <strong>agents</strong>.</p>
+                <p class="hero__sub">MSc student at Tsinghua University, based in Shenzhen.
+                    I connect training and evaluation with multimodal learning and speech/audio processing.</p>
                 <div class="hero__cta">
                     <a class="btn btn--primary" href="#projects">View Projects</a>
                     <a class="btn btn--ghost" href="https://github.com/WonderfulClaire" target="_blank" rel="noopener">GitHub ↗</a>
@@ -47,20 +43,13 @@
         <section id="about" class="section">
             <h2 class="section__title">About</h2>
             <div class="prose">
-                <p>
-                    I build practical AI systems where mathematics, algorithms, and real engineering meet.
-                    My recent work spans <strong>smart-wearable audio</strong>,
-                    <strong>multi-channel speech enhancement</strong>, <strong>LLM evaluation &amp; benchmarking</strong>,
-                    and <strong>AI systems</strong>.
-                </p>
-                <p>
-                    I care about reproducible experiments, clear documentation, and explainable technical choices —
-                    starting from small prototypes to validate ideas, then maturing the effective parts into long-term projects.
-                </p>
-                <p>
-                    I am starting my MSc in Artificial Intelligence at <strong>Tsinghua University</strong> (2026),
-                    focusing on audio/speech AI and AI systems, and actively exploring where research meets real-world deployment.
-                </p>
+                <p>My current work focuses on <strong>LLM post-training and tool-using agents</strong>:
+                    making learning signals inspectable, building useful interaction protocols, and evaluating failure modes.</p>
+                <p>I work through small, reproducible experiments before making larger claims.
+                    My public repositories include synthetic-data training studies, distributed gradient checks,
+                    learning implementations, and application prototypes.</p>
+                <p>Speech enhancement and microphone-array processing remain part of my research foundation.
+                    I am interested in how signal processing, representation learning, and distributed computation connect.</p>
             </div>
         </section>
 
@@ -68,13 +57,12 @@
         <section id="research" class="section section--alt">
             <h2 class="section__title">Research Interests</h2>
             <ul class="tags">
-                <li>Wearable Audio &amp; Smart Devices</li>
-                <li>Speech Enhancement (multi-channel, neural beamforming)</li>
-                <li>Array Signal Processing</li>
-                <li>LLM Evaluation &amp; Benchmarking</li>
-                <li>Retrieval-Augmented Generation (RAG) / LLM</li>
-                <li>AI Systems &amp; Efficient Inference</li>
-                <li>Multi-Agent Reinforcement Learning</li>
+                <li>LLM Post-training: SFT, Preference Learning &amp; RL</li>
+                <li>Tool-Using Agents &amp; Evaluation</li>
+                <li>Synthetic Data &amp; Learning Diagnostics</li>
+                <li>Multimodal Representation Learning</li>
+                <li>Distributed Training</li>
+                <li>Speech, Audio &amp; Array Signal Processing</li>
             </ul>
         </section>
 
@@ -83,38 +71,40 @@
             <h2 class="section__title">Featured Projects</h2>
             <div class="grid">
                 <article class="card">
-                    <h3>HearWeave</h3>
-                    <p>Open, reproducible spatial-audio building blocks for AI glasses and hearables — microphone-array beamforming, localization, and metrics in one readable Python toolkit.</p>
-                    <a class="card__link" href="https://github.com/WonderfulClaire/HearWeave" target="_blank" rel="noopener">Repository ↗</a>
+                    <h3>5G Diagnostic Agent</h3><p>Multi-turn diagnosis with evidence-gated tools, LoRA-SFT/GRPO training, and layered evaluation. Reports distinguish synthetic-data curriculum gains from unverified real-network performance.</p>
+                    <a class="card__link" href="https://github.com/WonderfulClaire/5G-Diagnostic-Agent" target="_blank" rel="noopener">Explore 5G Diagnostic Agent ↗</a>
                 </article>
                 <article class="card">
-                    <h3>awesome-toefl</h3>
-                    <p>A practical, community-driven TOEFL 2026 prep toolkit with an online practice app, question bank, and optional AI grading — built to be used, not just read.</p>
-                    <a class="card__link" href="https://github.com/WonderfulClaire/awesome-toefl" target="_blank" rel="noopener">Repository ↗</a>
+                    <h3>BLM Multimodal Audit</h3><p>Visual representation learning, distributed contrastive gradients, reviewed data production, and GRPO experiments. Includes reproducible checks and unsuccessful training runs.</p>
+                    <a class="card__link" href="https://github.com/WonderfulClaire/BLM-Multimodal-Audit" target="_blank" rel="noopener">Explore BLM Multimodal Audit ↗</a>
                 </article>
                 <article class="card">
-                    <h3>smart-wearable-math-foundations</h3>
-                    <p>Connects matrix analysis, stochastic processes, convex optimization &amp; statistical learning theory to real wearable audio and array-signal-processing problems (中文).</p>
-                    <a class="card__link" href="https://github.com/WonderfulClaire/smart-wearable-math-foundations" target="_blank" rel="noopener">Repository ↗</a>
+                    <h3>RL From Scratch</h3><p>Mathematical notes and learning implementations from Bellman equations to PPO, DPO, and GRPO. A place to connect an objective with its update rule and experiment.</p>
+                    <a class="card__link" href="https://github.com/WonderfulClaire/rl-from-scratch" target="_blank" rel="noopener">Explore RL From Scratch ↗</a>
                 </article>
                 <article class="card">
-                    <h3>claire-learning-hub</h3>
-                    <p>A hub that aggregates my smaller learning sites and experiment repos, so visitors can find the work that matters instead of getting lost in dozens of repositories.</p>
-                    <a class="card__link" href="https://github.com/WonderfulClaire/claire-learning-hub" target="_blank" rel="noopener">Repository ↗</a>
+                    <h3>Agent the Hard Way</h3><p>Go exercises following Leihb’s course: tool loops, permissions, context budgets, persistence, and memory. Learning work with explicit upstream attribution.</p>
+                    <a class="card__link" href="https://github.com/WonderfulClaire/agent-hard-way" target="_blank" rel="noopener">Explore Agent the Hard Way ↗</a>
+                </article>
+                <article class="card">
+                    <h3>HearWeave</h3><p>Readable microphone-array simulation, beamforming, localization, and spatial-audio baselines. Deterministic synthetic examples and documented assumptions.</p>
+                    <a class="card__link" href="https://github.com/WonderfulClaire/HearWeave" target="_blank" rel="noopener">Explore HearWeave ↗</a>
+                </article>
+                <article class="card">
+                    <h3>Career Pro AI</h3><p>A resume-analysis and mock-interview application with a server-side model API and a demo mode. A product prototype for exploring the user-facing side of AI systems.</p>
+                    <a class="card__link" href="https://github.com/WonderfulClaire/hokie-career-tutor-mvp" target="_blank" rel="noopener">Explore Career Pro AI ↗</a>
                 </article>
             </div>
         </section>
 
-        <!-- PUBLICATIONS -->
-        <section id="publications" class="section section--alt">
-            <h2 class="section__title">Publications</h2>
+        <section id="reports" class="section section--alt">
+            <h2 class="section__title">Experiment Reports</h2>
             <div class="prose">
-                <p class="placeholder">
-                    📄 Selected publications coming soon.
-                    <!-- 在这里添加你的论文，例如：
-                    <li>Your Name, et al. "Title." <em>ICASSP 2027</em> (under review). [PDF] [Code]</li>
-                    -->
-                </p>
+                <p>These are repository experiment records, not peer-reviewed publication claims.
+                    Each report states its data, protocol, results, and limits.</p>
+                <p><a href="https://github.com/WonderfulClaire/5G-Diagnostic-Agent/blob/main/reports/experiments/20260915-verified-curriculum/REPORT.md">5G Agent: curriculum comparison after removing identifier leakage</a></p>
+                <p><a href="https://github.com/WonderfulClaire/BLM-Multimodal-Audit/blob/main/reports/distributed/20260915/REPORT.md">Multimodal training: distributed gradient checks and communication experiments</a></p>
+                <p><a href="https://github.com/WonderfulClaire/HearWeave/blob/main/docs/beambench.md">HearWeave: synthetic delay-and-sum versus MVDR benchmark</a></p>
             </div>
         </section>
 
@@ -124,9 +114,6 @@
             <ul class="contact">
                 <li><span>GitHub</span><a href="https://github.com/WonderfulClaire" target="_blank" rel="noopener">@WonderfulClaire</a></li>
                 <li><span>Email</span><a href="mailto:wk1924321@163.com">wk1924321@163.com</a></li>
-                <!-- 把下面两行的 href 换成你的真实主页链接 -->
-                <li><span>Google Scholar</span><a href="#">coming soon</a></li>
-                <li><span>LinkedIn</span><a href="#">coming soon</a></li>
             </ul>
         </section>
     </main>

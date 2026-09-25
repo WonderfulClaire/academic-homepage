@@ -186,3 +186,19 @@ a:hover { text-decoration: underline; }
     .contact li { flex-direction: column; gap: 0.2rem; }
     .contact span { width: auto; }
 }
+
+/* Navigation and keyboard access on narrow screens. */
+html { scroll-padding-top: 6rem; }
+a:focus-visible { outline: 3px solid var(--primary); outline-offset: 4px; }
+.skip-link { position: absolute; left: 1rem; top: -5rem; z-index: 20; background: var(--bg); padding: .7rem; }
+.skip-link:focus { top: 1rem; }
+@media (max-width: 600px) {
+    .nav { flex-wrap: wrap; gap: .5rem; }
+    .nav__links { flex-wrap: wrap; gap: .6rem 1rem; }
+    .grid { grid-template-columns: minmax(0, 1fr); }
+    .contact a { overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .btn, .card { transition: none; }
+    .btn:hover, .card:hover { transform: none; }
+}

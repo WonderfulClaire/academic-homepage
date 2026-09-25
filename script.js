@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 var target = document.querySelector(id);
                 if (target) {
                     e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    target.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
                 }
             }
         });
