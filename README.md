@@ -7,7 +7,7 @@ Personal academic homepage for [@WonderfulClaire](https://github.com/WonderfulCl
 ## Contents
 
 - Current research interests and a concise introduction
-- Six selected public projects with concrete starting points
+- Seven selected public projects with concrete starting points
 - Repository experiment reports, clearly distinguished from peer-reviewed publications
 - Existing public contact information
 
