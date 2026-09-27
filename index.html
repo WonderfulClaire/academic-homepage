@@ -43,7 +43,7 @@
         <section id="about" class="section">
             <h2 class="section__title">About</h2>
             <div class="prose">
-                <p>My current work focuses on <strong>LLM post-training and tool-using agents</strong>:\n                    verifiable reward, reward hacking, harness generalization, training diagnostics, and reproducible evaluation.</p>
+                <p>My current work focuses on <strong>LLM post-training and tool-using agents</strong>: verifiable reward, reward hacking, harness generalization, training diagnostics, and reproducible evaluation.</p>
                 <p>I work through small, reproducible experiments before making larger claims.
                     My public repositories include synthetic-data training studies, distributed gradient checks,
                     learning implementations, and application prototypes.</p>
@@ -74,7 +74,7 @@
                     <a class="card__link" href="https://github.com/WonderfulClaire/kimi-k3-deep-dive" target="_blank" rel="noopener">Explore K3 Post-Training Lab ↗</a>
                 </article>
                 <article class="card">
-                    <h3>5G Diagnostic Agent</h3><p>Multi-turn diagnosis with evidence-gated tools, LoRA-SFT/GRPO training, and layered evaluation. Reports distinguish synthetic-data curriculum gains from unverified real-network performance.</p>
+                    <h3>5G Diagnostic Agent</h3><p>Multi-turn diagnosis with evidence-gated tools, LoRA-SFT/GRPO training, harness generalization, and offline reward-alignment auditing. Reports separate synthetic-data gains from unverified real-network performance.</p>
                     <a class="card__link" href="https://github.com/WonderfulClaire/5G-Diagnostic-Agent" target="_blank" rel="noopener">Explore 5G Diagnostic Agent ↗</a>
                 </article>
                 <article class="card">
@@ -82,11 +82,11 @@
                     <a class="card__link" href="https://github.com/WonderfulClaire/BLM-Multimodal-Audit" target="_blank" rel="noopener">Explore BLM Multimodal Audit ↗</a>
                 </article>
                 <article class="card">
-                    <h3>RL From Scratch</h3><p>Mathematical notes and learning implementations from Bellman equations to PPO, DPO, and GRPO. A place to connect an objective with its update rule and experiment.</p>
+                    <h3>RL From Scratch</h3><p>Mathematical notes and executable implementations from Bellman equations to PPO, DPO, GRPO, verifiable reward, and reward-hacking mechanics. Includes a minimal experiment showing how a bad reward can reinforce exploit strategies.</p>
                     <a class="card__link" href="https://github.com/WonderfulClaire/rl-from-scratch" target="_blank" rel="noopener">Explore RL From Scratch ↗</a>
                 </article>
                 <article class="card">
-                    <h3>Agent the Hard Way</h3><p>Go exercises following Leihb’s course: tool loops, permissions, context budgets, persistence, and memory. Learning work with explicit upstream attribution.</p>
+                    <h3>Agent the Hard Way</h3><p>Go exercises following Leihb’s course: provider abstractions, tool loops, permissions, context, memory, skill loading/routing, policy write boundaries, scoped subagents, and bounded parallel fan-out.</p>
                     <a class="card__link" href="https://github.com/WonderfulClaire/agent-hard-way" target="_blank" rel="noopener">Explore Agent the Hard Way ↗</a>
                 </article>
                 <article class="card">
@@ -94,7 +94,7 @@
                     <a class="card__link" href="https://github.com/WonderfulClaire/HearWeave" target="_blank" rel="noopener">Explore HearWeave ↗</a>
                 </article>
                 <article class="card">
-                    <h3>Research Training Guide</h3><p>A practical methodology handbook with a dedicated LLM/Agent protocol for leakage audits, verifier design, reward hacking, held-out harnesses, and SFT→RL attribution.</p>
+                    <h3>Research Training Guide</h3><p>A practical methodology handbook with a dedicated LLM/Agent experiment protocol and executable casebook covering leakage, verifier design, reward hacking, held-out harnesses, reward audits, and SFT→RL attribution.</p>
                     <a class="card__link" href="https://github.com/WonderfulClaire/research-training-guide/blob/main/docs/09-llm-agent-experiments.md" target="_blank" rel="noopener">Explore LLM / Agent Experiment Protocol ↗</a>
                 </article>
             </div>
@@ -105,7 +105,8 @@
             <div class="prose">
                 <p>These are repository experiment records, not peer-reviewed publication claims.
                     Each report states its data, protocol, results, and limits.</p>
-                <p><a href="https://github.com/WonderfulClaire/kimi-k3-deep-dive/blob/main/docs/experiments.md">K3 Lab: verifiable reward, reward hacking, history/harness ablation and SFT→GRPO protocol</a></p>\n                <p><a href="https://github.com/WonderfulClaire/5G-Diagnostic-Agent/blob/main/reports/experiments/20260915-verified-curriculum/REPORT.md">5G Agent: curriculum comparison after removing identifier leakage</a></p>
+                <p><a href="https://github.com/WonderfulClaire/kimi-k3-deep-dive/blob/main/docs/experiments.md">K3 Lab: verifiable reward, reward hacking, history/harness ablation and SFT→GRPO protocol</a></p>
+                <p><a href="https://github.com/WonderfulClaire/5G-Diagnostic-Agent/blob/main/docs/EXPERIMENT_PROTOCOL.md">5G Agent: training protocol, harness generalization and reward-alignment audit</a></p>
                 <p><a href="https://github.com/WonderfulClaire/BLM-Multimodal-Audit/blob/main/reports/distributed/20260915/REPORT.md">Multimodal training: distributed gradient checks and communication experiments</a></p>
                 <p><a href="https://github.com/WonderfulClaire/HearWeave/blob/main/docs/beambench.md">HearWeave: synthetic delay-and-sum versus MVDR benchmark</a></p>
             </div>
