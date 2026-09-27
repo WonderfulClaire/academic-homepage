@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Claire — MSc student at Tsinghua University. LLM post-training, reinforcement learning, agents, and multimodal learning.">
+    <meta name="description" content="Claire — LLM post-training, verifiable reward, reinforcement learning, tool-using agents, and multimodal learning.">
     <meta property="og:title" content="Claire · Academic Homepage">
     <meta property="og:description" content="MSc Student @ Tsinghua · LLM Post-training · Reinforcement Learning · Agents">
     <title>Claire · Academic Homepage</title>
@@ -43,8 +43,7 @@
         <section id="about" class="section">
             <h2 class="section__title">About</h2>
             <div class="prose">
-                <p>My current work focuses on <strong>LLM post-training and tool-using agents</strong>:
-                    making learning signals inspectable, building useful interaction protocols, and evaluating failure modes.</p>
+                <p>My current work focuses on <strong>LLM post-training and tool-using agents</strong>:\n                    verifiable reward, reward hacking, harness generalization, training diagnostics, and reproducible evaluation.</p>
                 <p>I work through small, reproducible experiments before making larger claims.
                     My public repositories include synthetic-data training studies, distributed gradient checks,
                     learning implementations, and application prototypes.</p>
@@ -71,6 +70,10 @@
             <h2 class="section__title">Featured Projects</h2>
             <div class="grid">
                 <article class="card">
+                    <h3>K3 Agentic Post-Training Lab</h3><p>A reproducible harness-to-training stack: secure verifier, reward-hacking cases, history and tool-schema ablations, verified trajectory export, LoRA-SFT, and environment-owned GRPO.</p>
+                    <a class="card__link" href="https://github.com/WonderfulClaire/kimi-k3-deep-dive" target="_blank" rel="noopener">Explore K3 Post-Training Lab ↗</a>
+                </article>
+                <article class="card">
                     <h3>5G Diagnostic Agent</h3><p>Multi-turn diagnosis with evidence-gated tools, LoRA-SFT/GRPO training, and layered evaluation. Reports distinguish synthetic-data curriculum gains from unverified real-network performance.</p>
                     <a class="card__link" href="https://github.com/WonderfulClaire/5G-Diagnostic-Agent" target="_blank" rel="noopener">Explore 5G Diagnostic Agent ↗</a>
                 </article>
@@ -91,8 +94,8 @@
                     <a class="card__link" href="https://github.com/WonderfulClaire/HearWeave" target="_blank" rel="noopener">Explore HearWeave ↗</a>
                 </article>
                 <article class="card">
-                    <h3>Career Pro AI</h3><p>A resume-analysis and mock-interview application with a server-side model API and a demo mode. A product prototype for exploring the user-facing side of AI systems.</p>
-                    <a class="card__link" href="https://github.com/WonderfulClaire/hokie-career-tutor-mvp" target="_blank" rel="noopener">Explore Career Pro AI ↗</a>
+                    <h3>Research Training Guide</h3><p>A practical methodology handbook with a dedicated LLM/Agent protocol for leakage audits, verifier design, reward hacking, held-out harnesses, and SFT→RL attribution.</p>
+                    <a class="card__link" href="https://github.com/WonderfulClaire/research-training-guide/blob/main/docs/09-llm-agent-experiments.md" target="_blank" rel="noopener">Explore LLM / Agent Experiment Protocol ↗</a>
                 </article>
             </div>
         </section>
@@ -102,7 +105,7 @@
             <div class="prose">
                 <p>These are repository experiment records, not peer-reviewed publication claims.
                     Each report states its data, protocol, results, and limits.</p>
-                <p><a href="https://github.com/WonderfulClaire/5G-Diagnostic-Agent/blob/main/reports/experiments/20260915-verified-curriculum/REPORT.md">5G Agent: curriculum comparison after removing identifier leakage</a></p>
+                <p><a href="https://github.com/WonderfulClaire/kimi-k3-deep-dive/blob/main/docs/experiments.md">K3 Lab: verifiable reward, reward hacking, history/harness ablation and SFT→GRPO protocol</a></p>\n                <p><a href="https://github.com/WonderfulClaire/5G-Diagnostic-Agent/blob/main/reports/experiments/20260915-verified-curriculum/REPORT.md">5G Agent: curriculum comparison after removing identifier leakage</a></p>
                 <p><a href="https://github.com/WonderfulClaire/BLM-Multimodal-Audit/blob/main/reports/distributed/20260915/REPORT.md">Multimodal training: distributed gradient checks and communication experiments</a></p>
                 <p><a href="https://github.com/WonderfulClaire/HearWeave/blob/main/docs/beambench.md">HearWeave: synthetic delay-and-sum versus MVDR benchmark</a></p>
             </div>
